@@ -26,3 +26,6 @@ db
 app.get("/", (req, res) => {
   res.send("Está funcionando 2");
 });
+
+// jobs routes
+app.use('/jobs', required('./routes/jobs.js'));
